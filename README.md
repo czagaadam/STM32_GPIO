@@ -1,6 +1,6 @@
 # STM32_GPIO
-The previous version of my GPIO base class had a different approach of interrupt handling and configurating the GPIO itself.
-The GPIO class had a static list containing the event callback for each GPIO.
+The previous version of my GPIO base class had a different approach of interrupt handling and GPIO configurating.
+The GPIO class had a static list containing the event callback reference for each GPIO.
 
 ![image](https://github.com/user-attachments/assets/1de6a56d-1cda-4771-93ff-fb419be9082e)
 

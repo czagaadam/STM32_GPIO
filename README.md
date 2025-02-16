@@ -28,6 +28,8 @@ GPIO object definition and usage:
 
 ![image](https://github.com/user-attachments/assets/f4fb55df-636a-4e63-b5b4-052ea0c84e90)
 
+The project description is also changed, until now I let everything to be managed by CubeIDE.
+It was good more or less but Cmakelists is doing a way much better job... 
 
 Previous version is located here:
 https://github.com/czagaadam/STM32CPP/tree/main/CPPLib/GPIObase

@@ -17,11 +17,11 @@ Typical digital input with falling edge detection and pull up resistor
 
 Then init function calls the HAL_GPIO_Init(_Port, &_GPIOx); with PORT and other necessary parameteres defined in constructor.
 
-GPIO object definition:
+GPIO object definition and usage:
 
-![image](https://github.com/user-attachments/assets/c5dbded6-c22f-40d0-b149-6c3cdd66ecad)
+![image](https://github.com/user-attachments/assets/535032b2-27b4-4348-a60c-9873643d549e)
 
-![image](https://github.com/user-attachments/assets/7e6474ec-c316-47f5-b04f-5245daa068bd)
+![image](https://github.com/user-attachments/assets/f4fb55df-636a-4e63-b5b4-052ea0c84e90)
 
 
 Previous version is located here:

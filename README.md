@@ -13,7 +13,7 @@ The initialization function of the GPIO objects was an "empty" function because 
 This new GPIO base class (v2.0) has no callback tracking so you need to handle them in the global interrupt routine.
 The previous version required lot of extra codes without almost any benefits: 
 
--generic ISR class definition for storing gpio objects and their cb routines in a static list: ISRbase<<Din></Din> Din::ISR_LIST;
+-generic ISR class definition for storing gpio objects and their cb routines in a static list: ISRbase < Din > :: ISR_LIST;
 
 -when interrupt was fired find the callback function for the realted gpio 
 

@@ -1,6 +1,6 @@
 # STM32_GPIO
 The previous version of my GPIO base class had a different approach of interrupt handling and GPIO configuration.
-The GPIO class had a static list containing the event callback reference for each GPIO.
+The GPIO base class had a static list which containing the event callback reference for each GPIO.
 
 ![image](https://github.com/user-attachments/assets/1de6a56d-1cda-4771-93ff-fb419be9082e)
 
@@ -10,11 +10,15 @@ The initialization function of the GPIO objects was an "empty" function because 
 
 # New approach:
 
-This new GPIO base class (v2.0) has no callback tracking so you need to handle them in the global interrupt routine (lot's of extra code without almost any benefits in previous verison) 
+This new GPIO base class (v2.0) has no callback tracking so you need to handle them in the global interrupt routine.
+The previous version required lot of extra codes without almost any benefits: 
+
+-generic ISR class definition for storing gpio objects and their cb routines in a static list
+-when interrupt was fired find the callback function for the realted gpio 
 
 ![image](https://github.com/user-attachments/assets/ee47a4dd-e967-464c-8ae0-5a5c83491ee7)
 
-but you can define as many GPIO child class with preconfigured GPIO settings as you want so you no need to use anymore CubeMX for GPIO configuration for you own GPIOs.
+You can define as many GPIO child class with preconfigured GPIO settings as you want so you no need to use anymore CubeMX for GPIO configuration for you own GPIOs.
 
 Typical digital input with falling edge detection and pull up resistor
 ![image](https://github.com/user-attachments/assets/f78acf83-a7e6-42a9-a5ac-2900e0f1428b)

@@ -1,9 +1,6 @@
 # STM32_GPIO
 The previous version of my GPIObase class approached interrupt handling and GPIO configuration differently. It relied on a static list to store callback references for each GPIO pin.
 
-(Insert image)
-(Insert image)
-
 ![image](https://github.com/user-attachments/assets/1de6a56d-1cda-4771-93ff-fb419be9082e)
 
 ![image](https://github.com/user-attachments/assets/eb970915-6ccf-4938-8dcf-adeee92ac977)
